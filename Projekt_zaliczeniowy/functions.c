@@ -1,13 +1,7 @@
-//
-// Created by T on 15.01.2024.
-//
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include "functions.h"
-
 
 void wyswietl_tablice(char tab[11][11]) {
     int i, j;
@@ -19,7 +13,6 @@ void wyswietl_tablice(char tab[11][11]) {
 
     }
 }
-
 
 void wypisz_zasady (){
     printf("Witaj w grze Saper!\n");
@@ -141,6 +134,13 @@ void inicjalizacja_tab_z_bombami(char tab_z_bombami[11][11], int ilosc_bomb){
                 tab_z_bombami[i][j] += ilosc;
             }
         }
+    }
+
+    tab_z_bombami[0][0]= ' ';
+    for(i = 1; i<=wielkosc; i++){
+
+        tab_z_bombami[i][0] = 'A' + i - 1;
+        tab_z_bombami[0][i] = '0' + i - 1;
     }
 
 }

@@ -1,13 +1,7 @@
-//
-// Created by T on 15.01.2024.
-//
-
-
 #ifndef PROJEKT_ZALICZENIOWY_FUNCTIONS_H
 #define PROJEKT_ZALICZENIOWY_FUNCTIONS_H
 
 #include <stdio.h>
-
 
 struct Player {
     char imie[100];

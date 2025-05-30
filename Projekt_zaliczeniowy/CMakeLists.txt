@@ -4,4 +4,6 @@ project(Projekt_zaliczeniowy C)
 set(CMAKE_C_STANDARD 90)
 
 add_executable(Projekt_zaliczeniowy main.c
-        functions.c)
+        functions.c
+        functions.h
+)
